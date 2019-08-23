@@ -39,7 +39,7 @@ def won?(board)
           win_index = combo[index]
           position = board[win_index]
 
-        return true if position == "X" || position == "O"
+        return combo if position == "X" || position == "O"
 
       end
     end
