@@ -38,9 +38,7 @@ def won?(board)
       combo.each do |index|
           win_index = combo[index]
           position = board[win_index]
-
-        return combo if position == "X" || position == "O"
-
+        return combo if position.all?("X") || position.all?("O")
       end
     end
     return false
