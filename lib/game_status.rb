@@ -35,11 +35,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? do |position|
-    if position == "X" || "O"
-      return true
-    else
-      return false
-    end
+  board.any? do |position|
+    return false if position == " "
   end
 end
