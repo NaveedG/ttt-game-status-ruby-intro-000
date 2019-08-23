@@ -35,7 +35,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.each do |position|
+  board.all? do |position|
     if position_taken?(board, position)
       return true
     else
