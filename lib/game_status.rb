@@ -50,9 +50,10 @@ end
 
 def winner(board, token)
   WIN_COMBINATIONS.each do | combo |
-    combo.all? do |index|
-      index = token
-      return token
+    combo.each do |index|
+      win_index = board[index]
+      position = board[index]
+      return token if position == token
     end
   end
 end
