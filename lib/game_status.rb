@@ -49,10 +49,10 @@ def over?(board)
 end
 
 def winner(board, token)
-  WIN_COMBINATIONS.any? do | combo |
+  WIN_COMBINATIONS.each do | combo |
     combo.all? do |index|
-      position = board[index]
-      return token if position == token
+      index = token
+      return token
     end
   end
 end
