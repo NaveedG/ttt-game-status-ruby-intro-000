@@ -56,7 +56,3 @@ def winner(board, token)
     end
   end
 end
-  
-
-    
-    
