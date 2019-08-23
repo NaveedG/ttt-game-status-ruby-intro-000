@@ -39,3 +39,12 @@ def full?(board)
     position == "X" || position == "O"
   end
 end
+
+def draw?(board)
+  if !won?(board) && full?(board)
+    return true
+  else
+    return false
+  end
+end
+  
