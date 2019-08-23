@@ -52,7 +52,7 @@ def winner(board, token)
   WIN_COMBINATIONS.any? do | combo |
     combo.all? do |index|
       position = board[index]
-      return token if postion == token
+      return token if position == token
     end
   end
 end
