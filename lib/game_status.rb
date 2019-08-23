@@ -36,6 +36,10 @@ end
 
 def full?(board)
   board.any? do |position|
-    return false if position == " "
+    if position == " "
+      return false
+    else
+      return true
+    end
   end
 end
