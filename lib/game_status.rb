@@ -47,3 +47,16 @@ end
 def over?(board)
   return true if won?(board) || full?(board) || draw?(board)
 end
+
+def winner(board, token)
+  WIN_COMBINATIONS.any? do | combo |
+    combo.all? do |index|
+      position = board[index]
+      return token if postion == token
+    end
+  end
+end
+  
+
+    
+    
